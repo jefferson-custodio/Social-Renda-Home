@@ -68,7 +68,6 @@ body{overflow-y: scroll}
     margin: 0 4px;
 }
 .nav-bar ul li:hover {
-    border-bottom: #fc3a00 5px solid;
     transition: .4s;
     padding: 5px 0;
     background-color: rgba(0, 0, 0, .4);
@@ -76,6 +75,7 @@ body{overflow-y: scroll}
 .nav-bar ul li:hover a{
     transform: translateY(-5px);
     transition: .4s;
+    color: #fff;
 }
 .nav-bar ul li a {
     display: block;
@@ -90,9 +90,12 @@ body{overflow-y: scroll}
     align-items: center;
 }
 #link-home-nav {
-    border-bottom: #fc3a00 5px solid;
     background-color: rgba(0, 0, 0, .4);
     padding: 5px 10px;
+    color: #fff;
+}
+#link-home-nav a{
+    color: #fff;
 }
 /*Nav device*/
 #button-open-menu{
