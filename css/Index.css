@@ -1,0 +1,102 @@
+
+/*Inicio estilização do cabeçalho*/
+
+.brand-heading{
+    background-image: url(../img/Bg-Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.brand-heading-overlay{
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+}
+
+.brand-heading-center-ap h1 {
+    color: #f36e35;
+    font-size: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: .8;
+}
+.brand-heading-center-ap h1 span{
+    color: #007f90;
+    font-size: 120px;
+    font-weight: 600;
+}
+.brand-heading-center-ap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-heading-center-ap.on {
+    animation: upText 1.4s linear;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+@keyframes upText {
+    0%{transform: translateY(80vh);}
+    100%{transform: translateY(0vh);}
+}
+.brand-heading-center-ap p {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.button-acessar-conta {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #fff;
+    border-radius: 50px;
+    background: #fc3a00;
+    background: -moz-linear-gradient(left, #fc3a00 19%, #fc3a00 19%, #fff600 99%); 
+    background: -webkit-linear-gradient(left, #fc3a00 19%,#fc3a00 19%,#fff600 99%); 
+    background: linear-gradient(to right, #fc3a00 19%,#fc3a00 19%,#fff600 99%);
+    transition: .5s;
+    
+}
+.button-acessar-conta:hover, .button-acessar-conta:focus{
+    color: #fff;
+    transform: scale(1.15);
+    text-decoration: none;
+    transition: .5s;
+}
+.button-acessar-conta.on{
+    animation: buttonleft 2s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 4.5s;
+}
+@keyframes buttonleft {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*fim estilização do cabeçalho*/
+
+/*@media*/
+
+@media(max-width: 480px){
+    /*Nav-bar*/
+    .logo-left img {width: 115px;}
+    /*Nav-bar*/
+    /*Brand-heading*/
+    .brand-heading-center-ap h1 {font-size: 60px}
+    .brand-heading-center-ap h1 span {font-size: 75px}
+    /*Brand-heading*/
+}
+
+/*@media*/
