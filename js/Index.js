@@ -2,7 +2,7 @@ $("#button-open-menu").click(function () {
     $(".div-list").fadeToggle(1000);
     $(".fa-bars").toggleClass("fa-times");
 });
-$(window).load("https://jeffersoncustodio820.github.io/Social-Renda-Home/", function () {
+$(window).load("this", function () {
     $(".div-wrap-loading").delay(2000).fadeOut(1000);
     $(".nav-bar").addClass('on');
     $(".brand-heading-center-ap").addClass('on');

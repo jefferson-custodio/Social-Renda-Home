@@ -27,6 +27,7 @@
 .brand-heading-center-ap h1 span{
     color: #007f90;
     font-size: 120px;
+    display: block;
     font-weight: 600;
 }
 .brand-heading-center-ap {
