@@ -7,5 +7,8 @@ $(window).load("this", function () {
     $(".nav-bar").addClass('on');
     $(".brand-heading-center-ap").addClass('on');
     $(".button-acessar-conta").addClass('on');
+    setInterval(() => {
+       $('body').css('overflow', 'auto') 
+    }, 3000);
 });
     
