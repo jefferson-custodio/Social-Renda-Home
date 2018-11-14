@@ -32,8 +32,7 @@ body{overflow-y: scroll}
 
 /*inicio estilização Nav-bar*/
 .nav-bar{
-    position: absolute;
-    top: 0;
+    display: block;
     padding: 10px 0;
     width: 100%;
     text-align: center;

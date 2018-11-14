@@ -1,15 +1,19 @@
 
 /*Inicio estilização do cabeçalho*/
 
-.brand-heading{
-    background-image: url(../img/Bg-Header.jpg);
+.wrap-all-header{
+    background:  url(../img/Bg-Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
 }
-
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
 .brand-heading-overlay{
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
@@ -31,11 +35,9 @@
     font-weight: 600;
 }
 .brand-heading-center-ap {
+    padding-top: 25px;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 80vh;
 }
 .brand-heading-center-ap.on {
     animation: upText 1.4s linear;
@@ -75,9 +77,6 @@
     transition: .5s;
     
 }
-.brand-heading-ap-content {
-    padding-top: 15px;
-}
 .button-acessar-conta:hover, .button-acessar-conta:focus{
     color: #fff;
     transform: scale(1.15);
@@ -97,7 +96,10 @@
 /*fim estilização do cabeçalho*/
 
 /*@media*/
-
+@media(max-width: 780px){
+    .brand-heading-center-ap {display: flex ;align-items: center; justify-content: center;
+    }
+}
 @media(max-width: 480px){
     /*Nav-bar*/
     .logo-left img {width: 115px;}
