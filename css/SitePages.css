@@ -125,6 +125,9 @@ body{overflow-y: scroll}
     #link-home-nav{background-color: #000;  margin-top: 70px !important;}
     /*Nav-bar*/
 }
+@media(max-width: 780px){
+    .nav-bar{position: fixed; top: 0;}
+}
 @media(max-width: 480px){
     /*Nav-bar*/
     .logo-left img {width: 115px;}
