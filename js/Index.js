@@ -18,6 +18,7 @@ $('#icon-scroll-top').click(function(){
 });
 
 $('#contatos').click(function(){
+    $(".div-list").fadeOut();
     $('html, body').animate({scrollTop : $("footer").offset().top},1500);
     return false;
 });
