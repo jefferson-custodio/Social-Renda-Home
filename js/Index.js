@@ -19,6 +19,7 @@ $('#icon-scroll-top').click(function(){
 
 $('#contatos').click(function(){
     $(".div-list").fadeOut();
+    $(".fa-bars").removeClass("fa-times");
     $('html, body').animate({scrollTop : $("footer").offset().top},1500);
     return false;
 });
