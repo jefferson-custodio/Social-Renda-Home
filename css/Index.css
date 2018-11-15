@@ -1,4 +1,4 @@
-
+body {overflow: hidden}
 /*Inicio estilização do cabeçalho*/
 
 .wrap-all-header{
@@ -236,6 +236,9 @@ footer ul li{
     font-size: 18px;
     padding: 5px 0;
 }
+footer ul li i{
+    margin-right: 10px;
+}
 footer ul li:nth-of-type(4){
     padding-top: 20px;
 }
@@ -254,8 +257,13 @@ footer p{
 .footer-scroll {
     text-align: center;
     color: #fff;
-    padding: 20px;
-    font-size: 25px;
+    padding: 15px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: auto;
+    cursor: pointer;
 }
 /*Footer*/
 
