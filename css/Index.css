@@ -8,16 +8,12 @@
     background-position: center;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
-}
-.brand-heading-overlay{
-    background-color: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 100%;
 }
 
 .brand-heading-center-ap h1 {
@@ -44,7 +40,7 @@
     animation-fill-mode: backwards;
 }
 @keyframes upText {
-    0%{transform: translateY(80vh);}
+    0%{transform: translateY(85vh);}
     100%{transform: translateY(0vh);}
 }
 .brand-heading-center-ap p {
@@ -52,13 +48,13 @@
     text-align: center;
     color: #fff;
 }
-.wrap-button-acess {
+.wrap-button {
     display: block;
     width: 210px;
     margin: auto;
     text-align: center;
 }
-.button-acessar-conta {
+.button {
     height: 45px;
     width: 210px;
     display: flex;
@@ -76,9 +72,9 @@
     transition: .5s;
     
 }
-.button-acessar-conta:hover, .button-acessar-conta:focus{
+.button:hover, .button:focus{
     color: #fff;
-    transform: scale(1.15);
+    transform: scale(1.2);
     text-decoration: none;
     transition: .5s;
 }
@@ -87,6 +83,10 @@
     animation-fill-mode: backwards;
     animation-delay: 4.5s;
 }
+.ap-video h2{
+    color: #ff0000;
+    font-size: 25px;
+}
 @keyframes buttonleft {
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -94,18 +94,189 @@
 
 /*fim estilização do cabeçalho*/
 
+/*inicio promo*/
+.promo-plan {
+    background-image: url(../img/promo.jpg);
+}
+.promo {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 2px solid #007f90;
+    border-bottom: 2px solid #007f90;
+}
+.promo-plan .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.promo-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.promo-plan-content p{
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+.button-promo.button {
+    font-size: 18px;
+    background: #007f90 !important;
+    border: #007f90 2px solid;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/*fim promo*/
+
+
+/*Iframe youtube*/
+.video-ap {
+    background-color: #f5fdf5;
+    padding: 40px 0;
+}
+.video-ap .video-ap-content h2{
+    font-size: 24px;
+    padding: 0 0 10px 0;
+    font-weight: 600;
+    display: inline-block;
+    color: #aa0202;
+}
+.video-ap .video-ap-content a{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.video-ap .video-ap-content a:hover{
+    color: #aa0202;
+    
+}
+.video-ap .video-ap-content iframe{
+    display: block;
+    margin: auto;
+}
+.video-ap-title {
+    max-width: 640px;
+    display: block;
+    margin: auto;
+}
+/*Iframe youtube*/
+
+/*apresentação*/
+.socialrenda-ap {
+    background-color: #f5fdf5;
+}
+.social-ap-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 0;
+}
+.social-ap-content h2, .social-ap-content h3 {
+    font-size: 28px;
+    color: #aa0202;
+    font-weight: 500;
+    text-align: center;
+}
+.social-ap-content h3{
+    margin-top: 30px;
+}
+.social-ap-content p {
+    padding: 12px 2px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/*apresentação*/
+
+/*Promo cadastro*/
+.promo-cadastro {
+    height: 300px;
+    background-image: url(../img/cadastro.jpg);
+}
+.promo-cadastro .overlay {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.promo-cadastro-content p{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/*Promo cadastro*/
+
+/*Footer*/
+footer {
+    background-color: #000000;
+    padding: 20px;
+}
+footer .col-md-6:first-of-type{
+    display: inline-flex;
+    align-items: center;
+}
+footer h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    color: #fff;
+}
+footer img{
+    width: 290px;
+    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+}
+footer ul {
+    padding: 18px 4px;   
+}
+footer ul li{
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+}
+footer ul li:nth-of-type(4){
+    padding-top: 20px;
+}
+footer ul li a {
+    font-size: 16px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer p{
+    color: rgb(141, 140, 140);
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer-scroll {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+}
+/*Footer*/
+
 /*@media*/
-@media(max-width: 780px){
-    .brand-heading-center-ap {display: flex ;align-items: center; justify-content: center; padding-top: 0; height: 100vh;}
+@media(max-width: 1000px), (min-width: 1360px){
+    .brand-heading-center-ap {display: flex; align-items: center; justify-content: center; padding-top: 0; height: 100vh;}
+}
+@media(max-width: 766px){
+    .video-ap .video-ap-content iframe{ width: 100%; height: 300px;}
+    footer img{margin: auto; padding-top: 20px;}
 }
 @media(max-width: 480px){
-    /*Nav-bar*/
-    .logo-left img {width: 115px;}
-    /*Nav-bar*/
     /*Brand-heading*/
-    .brand-heading-center-ap h1 {font-size: 60px}
-    .brand-heading-center-ap h1 span {font-size: 75px}
+    .brand-heading-center-ap h1 {font-size: 50px}
+    .brand-heading-center-ap h1 span {font-size: 65px}
+    .brand-heading-center-ap p {font-size: 20px}
     /*Brand-heading*/
+}
+@media(max-width: 320px){
+    .button-acessar-conta{margin-top: 25px;}
 }
 
 /*@media*/
