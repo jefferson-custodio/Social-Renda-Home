@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 });
 
 $("#button-open-menu").click(function () {
-    $(".div-list").fadeToggle(1000);
+    $(".div-list").toggleClass("open");
     $(".fa-bars").toggleClass("fa-times");
 });    
 
@@ -18,7 +18,7 @@ $('#icon-scroll-top').click(function(){
 });
 
 $('#contatos').click(function(){
-    $(".div-list").fadeOut();
+    $(".div-list").removeClass("open");
     $(".fa-bars").removeClass("fa-times");
     $('html, body').animate({scrollTop : $("footer").offset().top},1500);
     return false;

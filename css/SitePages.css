@@ -1,5 +1,6 @@
 h1,h2,h3,h4,h5,h6,p,a,li,button{font-family: 'Montserrat', sans-serif !important;}
 a:hover{text-decoration: none;}
+.open{transition: 5s;}
 /*---------Reset----------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -152,6 +153,9 @@ table {
     color: #fff;
     padding: 4px 1px 2px 1px;
 }
+.div-list {
+    transition: .5s;
+}
 /*Nav device*/
 
 /*fim estilização Nav-bar*/
@@ -164,10 +168,11 @@ table {
     /*Nav-bar*/
     .nav-bar{position: absolute; top: 0;}
     #button-open-menu{display: block;}
-    .div-list{display: none;}
+    .div-list{visibility: hidden; opacity: 0;}
     .list-of-links li{display: block !important; margin: 15px 50px !important;}
     .list-of-links { display: block !important; background-color: rgba(0, 0, 0, 0.9) !important; position: fixed; top: 0;right: 0; padding: 10px !important; width: 100%; height: 100vh;}
     #link-home-nav{background-color: #000;  margin-top: 70px !important;}
+    .open {visibility: visible; opacity: 1;}
     /*Nav-bar*/
 }
 @media(max-width: 480px){

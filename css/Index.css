@@ -1,6 +1,6 @@
 body {overflow: hidden}
-/*Inicio estilização do cabeçalho*/
 
+/*Inicio estilização do cabeçalho*/
 .wrap-all-header{
     background:  url(../img/Bg-Header.jpg);
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ body {overflow: hidden}
     border-bottom: 2px solid #007f90;
 }
 .promo-plan .overlay{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .promo-flex{
     display: flex;
@@ -195,17 +195,11 @@ body {overflow: hidden}
     height: 300px;
     background-image: url(../img/cadastro.jpg);
 }
-.promo-cadastro .overlay {
-    background-color: rgba(0, 0, 0, 0.8)
-}
 .promo-cadastro-content p{
     font-size: 30px;
     color: #fff;
     text-align: center;
 }
-
-
-
 /*Promo cadastro*/
 
 /*Footer*/
