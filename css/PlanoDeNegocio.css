@@ -42,3 +42,8 @@
     font-size: 22px;
     font-weight: 700;
 }
+
+@media(max-width: 695px){
+    .brand-heading h1, .brand-heading h1 span {font-size: 55px !important} 
+    #span-1{font-size: 40px !important}
+}
